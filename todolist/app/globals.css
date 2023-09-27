@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Mooli&display=swap');
+:root{
+  --primary-font:'Mooli', sans-serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+/* Myheader */
+h1{
+  text-align: center;
+  color: white;
+  padding: 20px;
+  background-color: black;
+}
+/* ToDoListSection */
+.section1{
+  background-color: blueviolet;
+  min-height: 100px;
+  width: 100%;
+}
+form{
+  width: 80%;
+  margin: auto;
+  /* border: 1px solid black; */
+}
+
+input[type="text"]{
+  border: 2px solid gray;
+  padding: 10px;
+  margin: 30px;
+  border-radius: 5px;
+  width: 30%;
+}
+.btn-form{
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  margin: 5px 0px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+/* displaying entered task and description */
+.displayTask{
+  background-color: lightslategray;
+  padding: 10px;
+}
+.displayTask ul li{
+list-style-type: none;
+display: flex;
+/* justify-content: space-between; */
+margin-right: 20px;
+font-family: var(--primary-font);
+padding-bottom: 10px;
+}
+.complete-mark{
+
+  /* color: green; */
+  font-size: 1.5em;
+  margin-right: 20px;
+  display: none;
+
+}
+.tasks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 50%;
+  font-size: 1vw;
+}
+.tasks h3{
+  font-size: 1.5em;
+  margin-right: 35px;
+  text-align: left;
+
+}
+
+.ri-delete-bin-line{
+  /* font-size: 20px; */
+  font-size: 1.5em;
+}
+.ri-delete-bin-line:hover{
+  cursor: pointer;
+}
+.controls{
+  width: 12%;
+  margin-left: auto;
+  padding: 10px;
+ 
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: 1vw;
+ 
+
+}
+.controls button{
+  padding: 5px;
+  border-radius: 5px;
+  border: 0px;
+  font-size: 1.5em;
+  font-family: inherit;
+}
+/* media queries */
+@media (max-width:755px) {
+  input[type="text"]:nth-child(2){
+    display: block;
+  }
+  input[type="text"]{
+
+    width: 50%;
+    margin-bottom: 4px;
+  }
+.btn-form{
+  margin: 30px;
+}
+.tasks{
+  font-size: 1.3vw;
+
+}
+.controls{
+  font-size: 1.3vw;
+}
+.controls button{
+  font-size: 1.8vw;
+  margin-left: 10px;
+}
+.ri-delete-bin-line{
+  /* font-size: 20px; */
+  font-size: 1.5vw;
+}
+.tasks{
+  width:70%;
+}
+  
+}
+
+@media (max-width:560px){
+  .tasks{
+    font-size: 2vw;
+  
+  }
+
+  .controls button{
+    font-size: 2vw;
+   
+  
+  }
+  .ri-delete-bin-line{
+    /* font-size: 20px; */
+    font-size: 15px;
+  }
+}
