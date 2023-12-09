@@ -1,0 +1,14 @@
+{
+  "postList": [
+    {
+      "id": 1,
+      "title": "first post",
+      "desc": "Hey hello everyone"
+    },
+    {
+      "id": 3,
+      "title": "third post",
+      "desc": "Hello busy people. Hope you all are doing well"
+    }
+  ]
+}
